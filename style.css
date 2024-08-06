@@ -1,0 +1,53 @@
+body{
+    background-color: #3AAED8;
+}
+
+h1{
+    text-align: center;
+}
+
+#p1{
+    color: black;
+    text-shadow: #596159;
+}
+
+#p2{
+    color: blue;
+}
+
+#p3{
+    color: green;
+}
+
+.d1{
+    display: flex;
+    align-content: center;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.hover-button {
+    background-color: #388659; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-button:hover {
+    background-color: white;
+    color: #4CAF50;
+}
