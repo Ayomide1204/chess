@@ -1,49 +1,24 @@
-body{
-    background-color: antiquewhite;
+body {
+    background-color: #001219;
 }
 
-header{
+header, .focus {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #003049;
     background-color: #001219;
 }
-.focus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #003049;
-    background-color: #001219;
-}
-#mage{
+
+#mage {
     height: 75px;
     width: 75px;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 10px;
-}
-
-#p1{
-    color: rgb(9, 7, 134);
-    text-shadow: #e91919;
-    padding: 50px 50px 50px 50px;
-}
-
-#p2{
-    color: blue;
-    text-shadow: #03180a;
-}
-
-#p3{
-    color: rgb(49, 0, 128);
-}
-
-.d1{
-    display: flex;
-    align-content: center;
+    color: white;
 }
 
 .hover-button {
@@ -58,6 +33,7 @@ h1{
     margin: 4px 2px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
 }
 
 .hover-button:hover {
@@ -65,12 +41,12 @@ h1{
     color: #4CAF50;
 }
 
-
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -85,11 +61,13 @@ nav ul li.search {
 .search-input {
     padding: 5px;
     font-size: 16px;
+    border-radius: 4px;
 }
 
 .search-button {
     cursor: pointer;
     padding: 5px;
+    border-radius: 4px;
 }
 
 .search-icon {
@@ -99,4 +77,105 @@ nav ul li.search {
     transition: background-color 0.3s, color 0.3s;
     height: 20px;
     width: 20px;
+    border-radius: 50%; /* Add this line for a circular icon */
+}
+
+section {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.welcome{
+    color: #003049;
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #001219;
+}
+
+.room {
+    width: 20%;
+    background-color: #001219;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.room h3 {
+    margin: 10px 0;
+    color: white;
+}
+
+.room p {
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.amenities{
+    justify-content: center;
+    text-align: center;
+}
+.amenities ul {
+    list-style: none;
+}
+
+.amenities li {
+    background-color: #001219;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.testimonials .testimonial {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+    color: #001219;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact label {
+    margin: 5px 0;
+    color: #001219;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact button {
+    margin-top: 10px;
+    background-color: #001219;
+    color: white;
+}
+footer{
+    color: white;
+    text-align: center;
+    justify-content: center;
 }
