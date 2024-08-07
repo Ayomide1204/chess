@@ -1,5 +1,7 @@
 body {
     background-color: #001219;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header, .focus {
@@ -8,6 +10,7 @@ header, .focus {
     justify-content: center;
     color: #003049;
     background-color: #001219;
+    padding: 10px;
 }
 
 #mage {
@@ -47,6 +50,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -77,7 +81,7 @@ nav ul li.search {
     transition: background-color 0.3s, color 0.3s;
     height: 20px;
     width: 20px;
-    border-radius: 50%; /* Add this line for a circular icon */
+    border-radius: 50%; /* Circular icon */
 }
 
 section {
@@ -87,7 +91,7 @@ section {
     border-radius: 5px;
 }
 
-.welcome{
+.welcome {
     color: #003049;
 }
 
@@ -103,8 +107,9 @@ section {
     background-color: #001219;
     padding: 2px;
     border-radius: 3px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 10px;
 }
 
 .room img {
@@ -121,17 +126,21 @@ section {
 .room p {
     color: white;
 }
-.container{
+
+.container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-.amenities{
+
+.amenities {
     justify-content: center;
     text-align: center;
 }
+
 .amenities ul {
     list-style: none;
+    padding: 0;
 }
 
 .amenities li {
@@ -155,8 +164,8 @@ section {
 
 .contact form {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact label {
@@ -167,15 +176,78 @@ section {
 .contact input, .contact textarea {
     padding: 10px;
     margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
 }
 
 .contact button {
     margin-top: 10px;
     background-color: #001219;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-footer{
+
+footer {
     color: white;
     text-align: center;
-    justify-content: center;
+    padding: 10px;
+    background-color: #003049;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .room {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .room {
+        width: 100%;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .focus {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+    
+    .hover-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .contact input, .contact textarea {
+        width: 100%;
+    }
 }
